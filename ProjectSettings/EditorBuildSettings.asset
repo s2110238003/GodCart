@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VR Interaction Scene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Hands Scene.unity
+    guid: bdc5cfd4b438335449166557db9bc64e
+  - enabled: 1
+    path: Assets/Scenes/creditscreen.unity
+    guid: 578c20045f9eb8c4f9c480c5c572edaf
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 30ba27e8ae2485049afff501b0818b7a,
       type: 2}
