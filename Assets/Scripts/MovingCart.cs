@@ -14,7 +14,7 @@ public class MovingCart : MonoBehaviour
     int counter;  // current target i
     Vector3 currentPosition;  // current transform of target
     public float inRangeDistance;  // check in range not actual point
-    int currentRound;
+    int currenDest;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +22,7 @@ public class MovingCart : MonoBehaviour
         nav = GetComponent<NavMeshAgent>();
         counter = 0;
         currentPosition = targets[0].position;
-        currentRound = 0;
-        UnityEngine.Debug.Log("Hello World");
+        currenDest = 0;
     }
 
     // Update is called once per frame
@@ -31,35 +30,24 @@ public class MovingCart : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, currentPosition) < inRangeDistance)
         {
-            counter++;
-            if (counter >= targets.Length)
+            counter++;  // get next i
+            currenDest++;  // count destinations
+            if (currenDest >= targets.Length*3+1)  // if three rounds passed
             {
-                counter = 0;
+                SceneManager.LoadScene("statsscreen");  // endscreen
             }
-            currentPosition = targets[counter].position;
-        }
-        nav.SetDestination(currentPosition);
-        //Console.Log(currentRound);
-    }
 
-    /*
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Finish")
-        {
-            currentRound++;
-            //Debug.Log(currentRound);
-            if (currentRound >= 4)
+            if (counter >= targets.Length)  
             {
-                // Collider hat Trigger "MyObjectTag" betreten
-                // füge hier deinen Code ein, um auf die Kollision zu reagieren
-                SceneManager.LoadScene("statsscreen");
-            }
-            
-        }
-    }
+                counter = 0; // set to first index
 
-    */
+            }
+            currentPosition = targets[counter].position;  // set to first target
+        }
+
+        nav.SetDestination(currentPosition);  // follow current destination
+        //UnityEngine.Debug.Log(currenDest);
+    }
+    
 
 }
