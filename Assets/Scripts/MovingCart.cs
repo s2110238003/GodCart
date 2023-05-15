@@ -16,9 +16,9 @@ public class MovingCart : MonoBehaviour
     public float inRangeDistance;  // check in range not actual point
     int currenDest;
 
-    // Death Counter
-    int sheepCounter;
-    int peopleCounter;
+    // Death Counters are static, so all chariots can access them
+    static int sheepCounter;
+    static int peopleCounter;
 
     // Stop Seconds
     public float sheepStopSeconds;
@@ -40,6 +40,8 @@ public class MovingCart : MonoBehaviour
         sheepCounter = 0;
         peopleCounter = 0;
         audioSource = GetComponent<AudioSource>();
+        PlayerPrefs.SetInt("SheepDeaths", 0);
+        PlayerPrefs.SetInt("PeopleDeaths", 0);
     }
 
 
@@ -53,9 +55,11 @@ public class MovingCart : MonoBehaviour
                 counter++;  // get next i
                 currenDest++;  // count destinations
 
-                if (currenDest >= targets.Length*3+1)  // if three rounds passed
+                if (currenDest >= targets.Length*3+1 && tag == "RedChariot")  // if red one did three rounds 
                 {
-                    SceneManager.LoadScene("statsscreen");  // endscreen
+                    PlayerPrefs.SetInt("SheepDeaths", sheepCounter);
+                    PlayerPrefs.SetInt("PeopleDeaths", peopleCounter);
+                    SceneManager.LoadScene("endVR");  // endscreen
                 }
 
                 if (counter >= targets.Length)  
@@ -79,7 +83,8 @@ public class MovingCart : MonoBehaviour
         {
             audioSource.clip = sheepSound;
             audioSource.Play();
-            sheepCounter++;  // death counter
+            sheepCounter++;  // death counter0
+            UnityEngine.Debug.Log(sheepCounter);
             other.gameObject.SetActive(false);  // disable sheep
             // Stop the NavMeshAgent for 3 seconds
             StartCoroutine(StopForSeconds(sheepStopSeconds));
@@ -93,7 +98,9 @@ public class MovingCart : MonoBehaviour
 
             if (peopleCounter >= 3)
             {
-                SceneManager.LoadScene("creditscreen"); // game over
+                PlayerPrefs.SetInt("SheepDeaths", sheepCounter);
+                PlayerPrefs.SetInt("PeopleDeaths", peopleCounter);
+                SceneManager.LoadScene("gameOverVR");  // game over
             }
 
             // Stop the NavMeshAgent for 3 seconds
