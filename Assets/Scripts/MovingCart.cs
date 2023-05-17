@@ -17,8 +17,8 @@ public class MovingCart : MonoBehaviour
     int currenDest;
 
     // Death Counters are static, so all chariots can access them
-    static int sheepCounter;
-    static int peopleCounter;
+    public int sheepCounter;
+    public int peopleCounter;
 
     // Stop Seconds
     public float sheepStopSeconds;
@@ -33,7 +33,6 @@ public class MovingCart : MonoBehaviour
     public GameObject Grave1;
     public GameObject Grave2;
     public GameObject Grave3;
-
 
 
     // Start is called before the first frame update
