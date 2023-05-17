@@ -29,6 +29,12 @@ public class MovingCart : MonoBehaviour
     public AudioClip peopleSound;
     AudioSource audioSource;
 
+    // Graves for Humans
+    public GameObject Grave1;
+    public GameObject Grave2;
+    public GameObject Grave3;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +48,13 @@ public class MovingCart : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         PlayerPrefs.SetInt("SheepDeaths", 0);
         PlayerPrefs.SetInt("PeopleDeaths", 0);
+
+        Grave1 = GameObject.Find("blade_gravestone");
+        Grave2 = GameObject.Find("cross_gravestone");
+        Grave3 = GameObject.Find("standard_gravestone");
+        Grave1.GetComponent<Renderer>().enabled = false;
+        Grave2.GetComponent<Renderer>().enabled = false;
+        Grave3.GetComponent<Renderer>().enabled = false;
     }
 
 
@@ -95,6 +108,19 @@ public class MovingCart : MonoBehaviour
             audioSource.Play();
             peopleCounter++;  // death counter
             other.gameObject.SetActive(false);  // disable human
+
+            if (peopleCounter == 1 && Grave1 != null)
+            {
+                Grave1.GetComponent<Renderer>().enabled = true;
+            }
+            else if (peopleCounter == 2 && Grave2 != null)
+            {
+                Grave2.GetComponent<Renderer>().enabled = true;
+            }
+            else if (peopleCounter == 3 && Grave3 != null)
+            {
+                Grave3.GetComponent<Renderer>().enabled = true;
+            }
 
             if (peopleCounter >= 3)
             {
