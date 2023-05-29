@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E2B1C943-8325-3F2A-DAAA-496338477019}</ProjectGuid>
+    <ProjectGuid>{AED14496-170D-4B5F-5CEF-E4C8CCB02773}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Meta.WitAI.Lib.Editor</AssemblyName>
@@ -774,7 +774,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Meta.WitAi.Lib.csproj">
-      <Project>{2ABA157B-30BF-745B-638E-28D06536B1B5}</Project>
+      <Project>{774055F3-6737-4C56-8FC2-E205660EE546}</Project>
       <Name>Meta.WitAi.Lib</Name>
     </ProjectReference>
   </ItemGroup>

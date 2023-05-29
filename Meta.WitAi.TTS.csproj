@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AB6F4488-ECB6-9F40-FA78-CC331FA087D6}</ProjectGuid>
+    <ProjectGuid>{639CAF3C-FF28-6544-79DC-81EC5B99A1C6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Meta.WitAi.TTS</AssemblyName>
@@ -760,11 +760,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Meta.WitAi.Lib.csproj">
-      <Project>{2ABA157B-30BF-745B-638E-28D06536B1B5}</Project>
+      <Project>{774055F3-6737-4C56-8FC2-E205660EE546}</Project>
       <Name>Meta.WitAi.Lib</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.csproj">
-      <Project>{4748FD06-6C63-A220-6EF7-2F8CE767E7AE}</Project>
+      <Project>{961EBCBA-B774-AF6B-30DB-8CD76AFE7C21}</Project>
       <Name>Meta.WitAi</Name>
     </ProjectReference>
   </ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B00471F1-E56E-AA15-51B5-FB7A6400E988}</ProjectGuid>
+    <ProjectGuid>{61B24C91-7F1B-D8B0-68C2-4D56B73CB8BE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Oculus.Interaction.InterfaceSupport</AssemblyName>
@@ -768,7 +768,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.Interaction.csproj">
-      <Project>{3DF99094-FE2A-ED6E-6A43-E7FE6C515057}</Project>
+      <Project>{CD3E3B8F-899C-77B9-8B52-CF9CFEA0D751}</Project>
       <Name>Oculus.Interaction</Name>
     </ProjectReference>
   </ItemGroup>

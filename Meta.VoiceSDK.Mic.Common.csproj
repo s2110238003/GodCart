@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E2BCE3DC-5954-C1DF-6C4E-1F5B3F9F9A34}</ProjectGuid>
+    <ProjectGuid>{9774DE4B-51AA-BAEA-2A5A-E1E082D14409}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Meta.VoiceSDK.Mic.Common</AssemblyName>

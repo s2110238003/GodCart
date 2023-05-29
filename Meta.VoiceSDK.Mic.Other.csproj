@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D956C46C-CB24-C17C-D667-87BD7FBDF830}</ProjectGuid>
+    <ProjectGuid>{0098B855-437C-7E7C-7EE7-4C337E46B853}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Meta.VoiceSDK.Mic.Other</AssemblyName>
@@ -746,11 +746,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Meta.VoiceSDK.Mic.Common.csproj">
-      <Project>{E2BCE3DC-5954-C1DF-6C4E-1F5B3F9F9A34}</Project>
+      <Project>{9774DE4B-51AA-BAEA-2A5A-E1E082D14409}</Project>
       <Name>Meta.VoiceSDK.Mic.Common</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.Lib.csproj">
-      <Project>{2ABA157B-30BF-745B-638E-28D06536B1B5}</Project>
+      <Project>{774055F3-6737-4C56-8FC2-E205660EE546}</Project>
       <Name>Meta.WitAi.Lib</Name>
     </ProjectReference>
   </ItemGroup>

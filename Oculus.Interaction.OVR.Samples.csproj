@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E3F47C37-D7A7-94D3-03E8-9E20E3CAF794}</ProjectGuid>
+    <ProjectGuid>{BA9CDFAA-7EA0-1137-3D9B-3D154DA099E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Oculus.Interaction.OVR.Samples</AssemblyName>
@@ -792,11 +792,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{272CE976-7B5A-6B94-975F-CAAFB432745E}</Project>
+      <Project>{0894C856-44A1-E8B1-0E17-E80BC4E66B63}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.csproj">
-      <Project>{3DF99094-FE2A-ED6E-6A43-E7FE6C515057}</Project>
+      <Project>{CD3E3B8F-899C-77B9-8B52-CF9CFEA0D751}</Project>
       <Name>Oculus.Interaction</Name>
     </ProjectReference>
   </ItemGroup>

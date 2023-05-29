@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5D0608B5-4FC9-70A5-8A61-E8E7EAE57CC7}</ProjectGuid>
+    <ProjectGuid>{1F11A146-EDD1-4D92-ACAC-64591D35BDEA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Oculus.Interaction.OVR.Editor</AssemblyName>
@@ -768,19 +768,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.Interaction.csproj">
-      <Project>{3DF99094-FE2A-ED6E-6A43-E7FE6C515057}</Project>
+      <Project>{CD3E3B8F-899C-77B9-8B52-CF9CFEA0D751}</Project>
       <Name>Oculus.Interaction</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.Editor.csproj">
-      <Project>{C0D7ED93-F9BF-9DA7-44DD-9BE5376CEFE2}</Project>
+      <Project>{C786FB51-6542-D629-F0E2-EE9A7A1C56CA}</Project>
       <Name>Oculus.Interaction.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.OVR.csproj">
-      <Project>{67D28BC9-EA8E-08B6-04BC-627951471EEF}</Project>
+      <Project>{31A92313-1B4C-8D41-993C-77C9FB4E132C}</Project>
       <Name>Oculus.Interaction.OVR</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{272CE976-7B5A-6B94-975F-CAAFB432745E}</Project>
+      <Project>{0894C856-44A1-E8B1-0E17-E80BC4E66B63}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
   </ItemGroup>
