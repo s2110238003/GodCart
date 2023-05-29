@@ -95,17 +95,19 @@ public class MovingCart : MonoBehaviour
         {
             audioSource.clip = sheepSound;
             audioSource.Play();
-            sheepCounter++;  // death counter0
+            sheepCounter = PlayerPrefs.GetInt("SheepDeaths");
+            PlayerPrefs.SetInt("SheepDeaths", sheepCounter++);
             UnityEngine.Debug.Log(sheepCounter);
             other.gameObject.SetActive(false);  // disable sheep
             // Stop the NavMeshAgent for 3 seconds
             StartCoroutine(StopForSeconds(sheepStopSeconds));
-        } 
+        }
         else if (other.gameObject.tag == "People")
         {
             audioSource.clip = peopleSound;
             audioSource.Play();
-            peopleCounter++;  // death counter
+            peopleCounter = PlayerPrefs.GetInt("PeopleDeaths");
+            PlayerPrefs.SetInt("PeopleDeaths", peopleCounter++);
             other.gameObject.SetActive(false);  // disable human
 
             if (peopleCounter == 1 && Grave1 != null)
@@ -131,6 +133,11 @@ public class MovingCart : MonoBehaviour
             // Stop the NavMeshAgent for 3 seconds
             StartCoroutine(StopForSeconds(peopleStopSeconds));
         }
+        else if (other.gameObject.tag == "EndSphere")
+        {
+            StartCoroutine(StopForSeconds(peopleStopSeconds));
+        }
+
     }
 
     IEnumerator StopForSeconds(float seconds)

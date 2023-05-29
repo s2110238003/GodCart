@@ -10,11 +10,12 @@ public class HandAnimator : MonoBehaviour
     public InputActionProperty triggerAction;
 
     void Update()
-    {
+    {/*
         var gripValue = gripAction.action.ReadValue<float>();
         animator.SetFloat("Grip", gripValue);
         
         var triggerValue = triggerAction.action.ReadValue<float>();
-        animator.SetFloat("Trigger", triggerValue);
+        animator.SetFloat("Trigger", triggerValue);*/
     }
+    
 }

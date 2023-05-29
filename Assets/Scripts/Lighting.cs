@@ -20,6 +20,7 @@ public class Lighting : MonoBehaviour
 
     void Update()
     {
+        /*
         if (Input.GetButtonDown("SecondaryIndexTrigger"))
         {
             interactor.enabled = true;
@@ -28,6 +29,6 @@ public class Lighting : MonoBehaviour
         {
             interactor.enabled = false;
         }
-
+        */
     }
 }
