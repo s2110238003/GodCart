@@ -62,7 +62,8 @@ public class lightingBoltEnd : MonoBehaviour
             audioSource.clip = sheepSound;
             audioSource.Play();
             sheepCounter = PlayerPrefs.GetInt("SheepDeaths");
-            PlayerPrefs.SetInt("SheepDeaths", sheepCounter++);
+            sheepCounter++;
+            PlayerPrefs.SetInt("SheepDeaths", sheepCounter);
             UnityEngine.Debug.Log(sheepCounter);
             other.gameObject.SetActive(false);  // disable sheep
         }
@@ -71,7 +72,8 @@ public class lightingBoltEnd : MonoBehaviour
             audioSource.clip = peopleSound;
             audioSource.Play();
             peopleCounter = PlayerPrefs.GetInt("PeopleDeaths");
-            PlayerPrefs.SetInt("PeopleDeaths", peopleCounter++);
+            peopleCounter++;
+            PlayerPrefs.SetInt("PeopleDeaths", peopleCounter);
             other.gameObject.SetActive(false);  // disable human
 
 
@@ -92,6 +94,7 @@ public class lightingBoltEnd : MonoBehaviour
             {
                 SceneManager.LoadScene("gameOverVR");  // game over
             }
+            //UnityEngine.Debug.Log("Sheeps: " + sheepCounter);
 
 
         }
