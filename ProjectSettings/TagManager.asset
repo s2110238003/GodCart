@@ -3,12 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - RoomLight
+  - SamplesInfoPanel
+  - EndSphere
+  - Sheep
+  - People
+  - RedChariot
+  - PurpleChariot
+  - YellowChariot
+  - BlueChariot
+  - LeftHand
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
